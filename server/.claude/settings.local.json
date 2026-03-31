@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start \"\" \"C:/Program Files/Docker/Docker/Docker Desktop.exe\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /F /PID 26400 /PID 20420 /PID 7608 /PID 19068 /PID 21576)",
+      "Bash(taskkill //F //PID 26400)",
+      "Bash(taskkill //F //PID 20420)",
+      "Bash(taskkill //F //PID 7608)",
+      "Bash(taskkill //F //PID 19068)",
+      "Bash(taskkill //F //PID 21576)",
+      "Bash(docker-compose up:*)",
+      "Bash(1 docker:*)",
+      "Bash(1 cd:*)",
+      "Bash(1 sleep:*)",
+      "Bash(cd \"C:/Users/Ted Simwa/Desktop/full-stack-capstone/fullstack_developer_capstone/server/djangoapp/microservices\" pip install flask nltk)",
+      "Bash(/dev/null find:*)",
+      "Bash(cd \"C:/Users/Ted Simwa/Desktop/full-stack-capstone/fullstack_developer_capstone\" git add -A git status --short)",
+      "Bash(cd \"C:/Users/Ted Simwa/Desktop/full-stack-capstone/fullstack_developer_capstone\" git status --short)",
+      "Bash(cd \"C:/Users/Ted Simwa/Desktop/full-stack-capstone/fullstack_developer_capstone\" sleep 10 gh run list --repo t-simwa/fullstack_developer_capstone)",
+      "Bash(cd \"C:/Users/Ted Simwa/Desktop/full-stack-capstone/fullstack_developer_capstone\" find . -name \"*.py\" -not -path \"*/djangoenv/*\" -not -path \"*/__pycache__/*\" -not -path \"*/node_modules/*\" -not -path \"*/migrations/*\")"
+    ]
+  }
+}
