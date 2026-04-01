@@ -105,7 +105,8 @@ def get_dealer_reviews(request, dealer_id):
         for review_detail in reviews:
             response = analyze_review_sentiments(review_detail['review'])
             print(response)
-            sentiment = response.get('sentiment', 'neutral') if response else 'neutral'
+            sentiment = response.get('sentiment', 'neutral') \
+                if response else 'neutral'
             review_detail['sentiment'] = sentiment
         return JsonResponse({"status": 200, "reviews": reviews})
     return JsonResponse({"status": 400, "message": "Bad Request"})
